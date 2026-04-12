@@ -45,6 +45,11 @@ body::before {
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.72), transparent 80%);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page-shell {
   width: min(1180px, calc(100% - 32px));
   margin: 24px auto;
@@ -101,7 +106,8 @@ body::before {
   text-decoration: none;
 }
 
-.brand-logo {
+.brand img,
+.brand .custom-logo {
   display: block;
   width: clamp(148px, 18vw, 220px);
   height: auto;
@@ -139,7 +145,8 @@ body::before {
 .hero-card h2,
 .section-heading h2,
 .two-column h2,
-.quote-support h2 {
+.quote-support h2,
+.fallback-title {
   margin: 0;
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
@@ -161,7 +168,8 @@ body::before {
 .timeline-item p,
 .trust-item span,
 .quote-support p,
-.contact-panel li {
+.contact-panel li,
+.fallback-entry {
   color: var(--muted);
   line-height: 1.75;
 }
@@ -226,7 +234,8 @@ body::before {
 .contact-panel,
 .service-card,
 .timeline-item,
-.trust-item {
+.trust-item,
+.fallback-content {
   border: 1px solid var(--line);
   border-radius: 28px;
   background: var(--surface);
@@ -261,7 +270,8 @@ body::before {
 
 .section-heading h2,
 .two-column h2,
-.quote-support h2 {
+.quote-support h2,
+.fallback-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   margin-top: 10px;
 }
@@ -427,8 +437,31 @@ body::before {
   margin-bottom: 0;
 }
 
+.fallback-shell {
+  padding: 0;
+}
+
+.fallback-content {
+  margin: 72px 28px;
+  padding: 36px;
+}
+
+.fallback-entry > *:first-child {
+  margin-top: 0;
+}
+
 .roadmap {
   position: relative;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
 }
 
 .reveal {
@@ -491,7 +524,8 @@ body::before {
     flex: 1 1 100%;
   }
 
-  .brand-logo {
+  .brand img,
+  .brand .custom-logo {
     width: 168px;
   }
 
@@ -504,7 +538,8 @@ body::before {
   }
 
   .quote,
-  .quote-support {
+  .quote-support,
+  .fallback-content {
     padding: 28px 22px;
   }
 }

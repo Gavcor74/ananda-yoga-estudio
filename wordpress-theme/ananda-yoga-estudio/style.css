@@ -1,0 +1,14 @@
+/*
+Theme Name: Ananda Yoga Estudio
+Theme URI: https://example.com/ananda-yoga-estudio
+Author: OpenAI Codex
+Author URI: https://openai.com/
+Description: Tema ligero para una landing de captación de Ananda Yoga Estudio, preparado para crecer hacia una tienda WooCommerce.
+Version: 1.0.0
+Requires at least: 6.4
+Tested up to: 6.8
+Requires PHP: 8.0
+Text Domain: ananda-yoga-estudio
+*/
+
+@import url("./assets/css/main.css");
