@@ -16,6 +16,9 @@ Repositorio de trabajo para la web de Nieves, profesora de yoga con negocio fís
 - `run-preview.cmd`
   Lanzador para Windows con doble clic.
 
+- `open-preview.cmd`
+  Abre la landing directamente en el navegador, sin servidor.
+
 ## Estructura del tema WordPress
 
 - `style.css`
@@ -55,6 +58,7 @@ Repositorio de trabajo para la web de Nieves, profesora de yoga con negocio fís
    - enlace de WhatsApp
 6. Sustituye el logo desde `Apariencia > Personalizar > Identidad del sitio` si quieres usar otra versión.
 7. Si solo quieres ver la landing estática, ejecuta `run-preview.cmd` desde la carpeta del repositorio.
+8. Si prefieres abrirla sin servidor, ejecuta `open-preview.cmd`.
 
 ## Recomendación de siguiente fase
 
