@@ -10,6 +10,12 @@ Repositorio de trabajo para la web de Nieves, profesora de yoga con negocio fís
 - `wordpress-theme/ananda-yoga-estudio/`
   Tema WordPress clásico listo para copiar a `wp-content/themes/`.
 
+- `preview-server.js`
+  Servidor estático local para la vista previa.
+
+- `run-preview.cmd`
+  Lanzador para Windows con doble clic.
+
 ## Estructura del tema WordPress
 
 - `style.css`
@@ -48,6 +54,7 @@ Repositorio de trabajo para la web de Nieves, profesora de yoga con negocio fís
    - ubicación
    - enlace de WhatsApp
 6. Sustituye el logo desde `Apariencia > Personalizar > Identidad del sitio` si quieres usar otra versión.
+7. Si solo quieres ver la landing estática, ejecuta `run-preview.cmd` desde la carpeta del repositorio.
 
 ## Recomendación de siguiente fase
 
